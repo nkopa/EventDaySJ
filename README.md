@@ -1,7 +1,7 @@
 EventDay
 ========
 
-Projekt portalu wspomagającego zarządzanie różnego rodzaju zdarzeniami (eventami). \n
+Projekt portalu wspomagającego zarządzanie różnego rodzaju zdarzeniami (eventami).
 
 Plany na najbliższy miesiąc:  
 Zarządzanie eventem:  
