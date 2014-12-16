@@ -18,3 +18,5 @@ Korzystanie z eventu:
 4. Wypisanie się z eventu.  
 5. Zakładanie nowego wydarzenia.  
 6. Lista eventów użytkownika.
+  
+Projekt graficzny portalu.
