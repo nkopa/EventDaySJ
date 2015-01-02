@@ -2,8 +2,12 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:genericpage>
+    <jsp:attribute name="sidebar">
+      Nazwa: <input type="text">  Kategoria: <input type="text">  Autor: <input type="text">
+    </jsp:attribute>
+    
     <jsp:body>
-        <p>Hello World!</p>
+    	<p>Szukaj</p>
         BODY
 		<br/> BODY
 		<br/> BODY

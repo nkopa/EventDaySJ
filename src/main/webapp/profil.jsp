@@ -3,7 +3,7 @@
 
 <t:genericpage>
     <jsp:body>
-        <p>Hello World!</p>
+    	<p>Profil</p>
         BODY
 		<br/> BODY
 		<br/> BODY
