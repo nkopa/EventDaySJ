@@ -4,115 +4,103 @@ import java.awt.image.BufferedImage;
 import java.util.Date;
 
 public class User {
-	//0 - osoba publiczna
-	//1 - osoba prywatna
-	private boolean accountType;
 	
-	private String name;
-	private String surname;
-	private Date birthday;
-	
+	private int idUser;
+	private Address idAddress;	
 	//0 - mezczyzna
 	//1 - kobieta
-	private boolean sex;//chyba ze wolicie gender ;P
+	private boolean idSex;//chyba ze wolicie gender ;P	
+	//0 - osoba publiczna
+	//1 - osoba prywatna
+	private int idAccountType;
 	private String login;
 	private String email;
 	private String password;
-	private Address address;
-	
-	//zainteresowania
-	private String interests;//albo w postaci listy
-	
-	//zdjęcie profilowe
+	private String name;
+	private String surname;
+	private Date birthday;	
+	private String interests;//albo w postacilisty	
 	private BufferedImage profileImage;
-
+	private Date createTime;
 	
-	//GET/SET ATRYBUTY
-	public boolean isAccountType() {
-		return accountType;
+	public int getIdUser() {
+		return idUser;
 	}
-
-	public void setAccountType(boolean accountType) {
-		this.accountType = accountType;
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
 	}
-
-	public String getName() {
-		return name;
+	public Address getIdAddress() {
+		return idAddress;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setIdAddress(Address idAddress) {
+		this.idAddress = idAddress;
 	}
-
-	public String getSurname() {
-		return surname;
+	public boolean isIdSex() {
+		return idSex;
 	}
-
-	public void setSurname(String surname) {
-		this.surname = surname;
+	public void setIdSex(boolean idSex) {
+		this.idSex = idSex;
 	}
-
-	public Date getBirthday() {
-		return birthday;
+	public int getIdAccountType() {
+		return idAccountType;
 	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setIdAccountType(int idAccountType) {
+		this.idAccountType = idAccountType;
 	}
-
-	public boolean isSex() {
-		return sex;
-	}
-
-	public void setSex(boolean sex) {
-		this.sex = sex;
-	}
-
 	public String getLogin() {
 		return login;
 	}
-
 	public void setLogin(String login) {
 		this.login = login;
 	}
-
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public Address getAddress() {
-		return address;
+	public String getName() {
+		return name;
 	}
-
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setName(String name) {
+		this.name = name;
 	}
-
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public Date getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
 	public String getInterests() {
 		return interests;
 	}
-
 	public void setInterests(String interests) {
 		this.interests = interests;
 	}
-
 	public BufferedImage getProfileImage() {
 		return profileImage;
 	}
-
 	public void setProfileImage(BufferedImage profileImage) {
 		this.profileImage = profileImage;
 	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+	
+	
 }

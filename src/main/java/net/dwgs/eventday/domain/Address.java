@@ -1,6 +1,8 @@
 package net.dwgs.eventday.domain;
 
 public class Address {
+	private int idAddress;
+	
 	private String country;
 	
 	//wojewodztwo
@@ -76,6 +78,16 @@ public class Address {
 
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
+	}
+
+
+	public int getIdAddress() {
+		return idAddress;
+	}
+
+
+	public void setIdAddress(int idAddress) {
+		this.idAddress = idAddress;
 	}
 
 }
