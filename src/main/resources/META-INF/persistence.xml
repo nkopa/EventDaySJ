@@ -8,16 +8,16 @@
 	<persistence-unit name="demoPU">
 	
 		<!-- You can force a non-default JPA provider using one of these declarations -->
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		 <!--  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+		<!--provider>org.hibernate.ejb.HibernatePersistence</provider-->
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
 		<!-- Use this data source name for JBoss AS -->
 		<!-- <jta-data-source>java:/DefaultDS</jta-data-source> -->
 		
 		<!-- Use this data source name for Glassfish -->
-		<!--  <jta-data-source>jdbc/__default</jta-data-source> -->
+		<jta-data-source>jdbc/__default</jta-data-source>
 
-		<jta-data-source>jdbc/demoapps</jta-data-source>
+		<!--jta-data-source>jdbc/demoapps</jta-data-source-->
 		
 		<properties>
 			<!-- Properties for Hibernate (default provider for JBoss AS) -->
