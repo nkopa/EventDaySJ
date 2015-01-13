@@ -2,6 +2,11 @@ package net.dwgs.eventday.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
 public class EventStatus {
 	
 private int idEventStatus;
@@ -13,7 +18,8 @@ private int idStatus;
 private User idInspector;
 private Date createTime;
 
-
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 public int getStatus_id() {
 	return idStatus;
 }

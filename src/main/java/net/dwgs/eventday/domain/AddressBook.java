@@ -2,6 +2,11 @@ package net.dwgs.eventday.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
 public class AddressBook {
 private int idAddressBook;
 //0 aktualny
@@ -11,7 +16,8 @@ private int idStatus;
 private User idUserOwner;
 private User idUser;
 private Date createTime;
-
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 public int getIdAddressBook() {
 	return idAddressBook;
 }

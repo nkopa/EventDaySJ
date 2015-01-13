@@ -2,6 +2,11 @@ package net.dwgs.eventday.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
 public class Comment {
 	
 private int idComment;
@@ -11,6 +16,8 @@ private StatusComment idStatusComment;
 private String describe;
 private Date createTime;
 
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 public int getIdComment() {
 	return idComment;
 }

@@ -1,11 +1,19 @@
 package net.dwgs.eventday.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class EventCategory {
 	
 private int idEventCategory;
 private Event idEvent;
 private int idCategory;
 
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 public int getIdEventCategory() {
 	return idEventCategory;
 }

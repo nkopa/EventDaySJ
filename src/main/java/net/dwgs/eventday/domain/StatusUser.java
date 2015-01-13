@@ -1,7 +1,11 @@
 package net.dwgs.eventday.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.xml.crypto.Data;
-
+@Entity
 public class StatusUser {
 	
 private int idUserStatus;
@@ -16,6 +20,8 @@ private int idStatus;
 private int idPrivilage;
 private Data modifyTime;
 
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 public int getIdUserStatus() {
 	return idUserStatus;
 }

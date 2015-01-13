@@ -3,6 +3,11 @@ package net.dwgs.eventday.domain;
 import java.awt.image.BufferedImage;
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
 public class User {
 	
 	private int idUser;
@@ -23,6 +28,8 @@ public class User {
 	private BufferedImage profileImage;
 	private Date createTime;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public int getIdUser() {
 		return idUser;
 	}
