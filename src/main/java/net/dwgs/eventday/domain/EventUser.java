@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class EventUser {
 	
-private int idEventUser;
+private Long idEventUser;
 private Event idEvent;
 private User idUser;
 //0 aktywny
@@ -22,10 +22,10 @@ private Date createTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdEventUser() {
+public Long getIdEventUser() {
 	return idEventUser;
 }
-public void setIdEventUser(int idEventUser) {
+public void setIdEventUser(Long idEventUser) {
 	this.idEventUser = idEventUser;
 }
 public Event getIdEvent() {

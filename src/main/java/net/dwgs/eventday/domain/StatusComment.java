@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class StatusComment {
 	
-private int idStatusComment;
+private Long idStatusComment;
 private User idInspector;
 //0 dostepny
 //1 zablokowany
@@ -18,10 +18,10 @@ private Date createTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdStatusComment() {
+public Long getIdStatusComment() {
 	return idStatusComment;
 }
-public void setIdStatusComment(int idStatusComment) {
+public void setIdStatusComment(Long idStatusComment) {
 	this.idStatusComment = idStatusComment;
 }
 public User getIdInspector() {

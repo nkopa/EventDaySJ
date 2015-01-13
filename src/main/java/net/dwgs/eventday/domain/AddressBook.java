@@ -12,7 +12,7 @@ private int idAddressBook;
 //0 aktualny
 //1 usuniety
 //(2 zablokowany)
-private int idStatus;
+private Long idStatus;
 private User idUserOwner;
 private User idUser;
 private Date createTime;
@@ -24,10 +24,10 @@ public int getIdAddressBook() {
 public void setIdAddressBook(int idAddressBook) {
 	this.idAddressBook = idAddressBook;
 }
-public int getIdStatus() {
+public Long getIdStatus() {
 	return idStatus;
 }
-public void setIdStatus(int idStatus) {
+public void setIdStatus(Long idStatus) {
 	this.idStatus = idStatus;
 }
 public User getIdUserOwner() {

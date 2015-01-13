@@ -8,7 +8,7 @@ import javax.xml.crypto.Data;
 @Entity
 public class StatusUser {
 	
-private int idUserStatus;
+private Long idUserStatus;
 private User idUser;
 private User idInspector;
 //0 aktywny
@@ -22,10 +22,10 @@ private Data modifyTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdUserStatus() {
+public Long getIdUserStatus() {
 	return idUserStatus;
 }
-public void setIdUserStatus(int idUserStatus) {
+public void setIdUserStatus(Long idUserStatus) {
 	this.idUserStatus = idUserStatus;
 }
 public User getIdUser() {

@@ -9,16 +9,16 @@ import javax.persistence.Id;
 @Entity
 public class Category {
 	
-private int idCategory;
+private Long idCategory;
 private User idAdmin;
 private String name;
 private Date createTime;
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdCategory() {
+public Long getIdCategory() {
 	return idCategory;
 }
-public void setIdCategory(int idCategory) {
+public void setIdCategory(Long idCategory) {
 	this.idCategory = idCategory;
 }
 public User getIdAdmin() {

@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class EventRating {
-private int idEventRating;
+private Long idEventRating;
 private User idUser;
 private Event idEvent;
 private int rating;
@@ -16,10 +16,10 @@ private Date createTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdEventRating() {
+public Long getIdEventRating() {
 	return idEventRating;
 }
-public void setIdEventRating(int idEventRating) {
+public void setIdEventRating(Long idEventRating) {
 	this.idEventRating = idEventRating;
 }
 public User getIdUser() {

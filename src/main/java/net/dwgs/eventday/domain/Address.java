@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Address {
-	private int idAddress;
+	private Long idAddress;
 	
 	private String country;
 	
@@ -88,12 +88,12 @@ public class Address {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public int getIdAddress() {
+	public Long getIdAddress() {
 		return idAddress;
 	}
 
 
-	public void setIdAddress(int idAddress) {
+	public void setIdAddress(Long idAddress) {
 		this.idAddress = idAddress;
 	}
 

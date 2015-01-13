@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Comment {
 	
-private int idComment;
+private Long idComment;
 private User idUser;
 private Event idEvent;
 private StatusComment idStatusComment;
@@ -18,10 +18,10 @@ private Date createTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdComment() {
+public Long getIdComment() {
 	return idComment;
 }
-public void setIdComment(int idComment) {
+public void setIdComment(Long idComment) {
 	this.idComment = idComment;
 }
 public User getIdUser() {

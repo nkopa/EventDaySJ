@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class EventStatus {
 	
-private int idEventStatus;
+private Long idEventStatus;
 private Event idEvent;
 //0 aktywny
 //1 usuniety
@@ -26,10 +26,10 @@ public int getStatus_id() {
 public void setStatus_id(int status_id) {
 	this.idStatus = status_id;
 }
-public int getIdEventStatus() {
+public Long getIdEventStatus() {
 	return idEventStatus;
 }
-public void setIdEventStatus(int idEventStatus) {
+public void setIdEventStatus(Long idEventStatus) {
 	this.idEventStatus = idEventStatus;
 }
 public User getIdInspector() {

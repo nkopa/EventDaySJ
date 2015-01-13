@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Event {
 
-private	int idEvent; 
+private	Long idEvent; 
 private User idAuthor;
 //0 publiczny
 //1 prywatny
@@ -41,10 +41,10 @@ private String recruitmentStopHour;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdEvent() {
+public Long getIdEvent() {
 	return idEvent;
 }
-public void setIdEvent(int idEvent) {
+public void setIdEvent(Long idEvent) {
 	this.idEvent = idEvent;
 }
 public String getTitle() {

@@ -7,16 +7,16 @@ import javax.persistence.Id;
 
 @Entity
 public class NotificationSms {
-	private int idNotificationSms;
+	private Long idNotificationSms;
 	private User idUser;
 	private Event idEvent;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public int getIdNotificationSms() {
+	public Long getIdNotificationSms() {
 		return idNotificationSms;
 	}
-	public void setIdNotificationSms(int idNotificationSms) {
+	public void setIdNotificationSms(Long idNotificationSms) {
 		this.idNotificationSms = idNotificationSms;
 	}
 	public User getIdUser() {

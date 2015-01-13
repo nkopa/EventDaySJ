@@ -8,16 +8,16 @@ import javax.persistence.Id;
 @Entity
 public class EventCategory {
 	
-private int idEventCategory;
+private Long idEventCategory;
 private Event idEvent;
 private int idCategory;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
-public int getIdEventCategory() {
+public Long getIdEventCategory() {
 	return idEventCategory;
 }
-public void setIdEventCategory(int idEventCategory) {
+public void setIdEventCategory(Long idEventCategory) {
 	this.idEventCategory = idEventCategory;
 }
 public Event getIdEvent() {
