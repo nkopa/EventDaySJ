@@ -2,15 +2,24 @@ package net.dwgs.eventday.service;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 import net.dwgs.eventday.domain.User;
 
+@Stateless
 //do uzupelnienia - ma korzystac z bazy
 public class UserManager implements UserInterface{
 
+	@PersistenceContext
+	EntityManager em;
+	
 	@Override
 	public void addUser(User user) {
 		// TODO Auto-generated method stub
-		
+		user.setIdUser(null);
+		em.persist(user);
 	}
 
 	@Override

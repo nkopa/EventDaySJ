@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class User {
 	
-	private int idUser;
+	private Long idUser;
 	private Address idAddress;	
 	//0 - mezczyzna
 	//1 - kobieta
@@ -30,10 +30,10 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public int getIdUser() {
+	public Long getIdUser() {
 		return idUser;
 	}
-	public void setIdUser(int idUser) {
+	public void setIdUser(Long idUser) {
 		this.idUser = idUser;
 	}
 	public Address getIdAddress() {
