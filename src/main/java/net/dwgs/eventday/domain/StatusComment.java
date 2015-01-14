@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 @Entity
 public class StatusComment {
 	
@@ -36,6 +38,7 @@ public int getIdStatus() {
 public void setIdStatus(int idStatus) {
 	this.idStatus = idStatus;
 }
+@Temporal(TemporalType.DATE)
 public Date getCreateTime() {
 	return createTime;
 }

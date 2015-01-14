@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 @Entity
 public class User {
 	
@@ -25,7 +27,7 @@ public class User {
 	private String surname;
 	private Date birthday;	
 	private String interests;//albo w postacilisty	
-	private BufferedImage profileImage;
+	//private BufferedImage profileImage;
 	private Date createTime;
 	
 	@Id
@@ -84,6 +86,7 @@ public class User {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+	@Temporal(TemporalType.DATE)
 	public Date getBirthday() {
 		return birthday;
 	}
@@ -96,12 +99,13 @@ public class User {
 	public void setInterests(String interests) {
 		this.interests = interests;
 	}
-	public BufferedImage getProfileImage() {
-		return profileImage;
-	}
-	public void setProfileImage(BufferedImage profileImage) {
-		this.profileImage = profileImage;
-	}
+	//public BufferedImage getProfileImage() {
+	//	return profileImage;
+	//}
+	//public void setProfileImage(BufferedImage profileImage) {
+	//	this.profileImage = profileImage;
+	//}
+	@Temporal(TemporalType.DATE)
 	public Date getCreateTime() {
 		return createTime;
 	}

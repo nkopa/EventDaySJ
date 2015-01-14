@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 @Entity
 public class Event {
 
@@ -107,9 +109,12 @@ public User getIdAuthor() {
 public void setIdAuthor(User idAuthor) {
 	this.idAuthor = idAuthor;
 }
+@Temporal(TemporalType.DATE)
 public Date getCreateTime() {
 	return createTime;
 }
+
+
 public void setCreateTime(Date createTime) {
 	this.createTime = createTime;
 }
@@ -131,18 +136,21 @@ public Address getIdAddress() {
 public void setIdAddress(Address idAddress) {
 	this.idAddress = idAddress;
 }
+@Temporal(TemporalType.DATE)
 public Date getEventStartDate() {
 	return eventStartDate;
 }
 public void setEventStartDate(Date eventStartDate) {
 	this.eventStartDate = eventStartDate;
 }
+
 public String getEventStartHour() {
 	return eventStartHour;
 }
 public void setEventStartHour(String eventStartHour) {
 	this.eventStartHour = eventStartHour;
 }
+@Temporal(TemporalType.DATE)
 public Date getEventStopDate() {
 	return eventStopDate;
 }
@@ -155,6 +163,7 @@ public String getEventStopHour() {
 public void setEventStopHour(String eventStopHour) {
 	this.eventStopHour = eventStopHour;
 }
+@Temporal(TemporalType.DATE)
 public Date getRecruitmentStartDate() {
 	return recruitmentStartDate;
 }
@@ -167,6 +176,7 @@ public String getRecruitmentStartHour() {
 public void setRecruitmentStartHour(String recruitmentStartHour) {
 	this.recruitmentStartHour = recruitmentStartHour;
 }
+@Temporal(TemporalType.DATE)
 public Date getRecruitmentStopDate() {
 	return recruitmentStopDate;
 }

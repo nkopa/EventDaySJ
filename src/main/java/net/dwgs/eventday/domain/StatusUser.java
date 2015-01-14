@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.crypto.Data;
 @Entity
 public class StatusUser {
@@ -18,7 +20,7 @@ private int idStatus;
 //0 user
 //1 admin
 private int idPrivilage;
-private Data modifyTime;
+private String modifyTime;
 
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,10 +54,11 @@ public int getIdPrivilage() {
 public void setIdPrivilage(int idPrivilage) {
 	this.idPrivilage = idPrivilage;
 }
-public Data getModifyTime() {
+
+public String getModifyTime() {
 	return modifyTime;
 }
-public void setModifyTime(Data modifyTime) {
+public void setModifyTime(String modifyTime) {
 	this.modifyTime = modifyTime;
 }
 

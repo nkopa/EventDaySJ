@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 @Entity
 public class EventRating {
 private Long idEventRating;
@@ -40,6 +42,7 @@ public int getRating() {
 public void setRating(int rating) {
 	this.rating = rating;
 }
+@Temporal(TemporalType.DATE)
 public Date getCreateTime() {
 	return createTime;
 }
